@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tailwindcss -i ./Src/input.css -o ./Public/style.css --watch",
-    "start": "nodemon Server/index.js"
+    "start": "node Server/index.js"
   },
   "keywords": [],
   "author": "",
