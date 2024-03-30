@@ -82,27 +82,11 @@ $username = $_SESSION['username'];
                         <div class="bg-white border-solid border-0 rounded-2xl p-3 w-[13rem] h-[18rem] overflow-y-auto md:w-[18rem] md:h-[15rem]" id="globalMsg-holder">
 
                             <!--Connection div-->
-                            <!--<div class="py-3 bg-[#F6F4EB] h-fit border-solid border-0 rounded-2xl mt-3">
-                                <p class="font-[courier] w-full text-[#4682A9] font-bold text-sm text-center">{User} Connected</p>
-                            </div>-->
 
                             <!--Recieve Message-->
-                            <!--<div class="mt-3">
-                                <p class="font-[courier] text-[#4682A9] font-bold text-sm text-left">{User} said</p>
-
-                                <div class="py-3 bg-[#F6F4EB] w-fit h-fit border-solid border-0 rounded-2xl p-3">
-                                    <p class="font-[courier] text-[#4682A9] text-sm text-left">Display text message from receiver.</p>
-                                </div>
-                            </div>-->
 
                             <!--Send Message-->
-                            <!--<div class="mt-3">
-                                <p class="font-[courier] text-[#4682A9] font-bold text-sm text-right">You said</p>
 
-                                <div class="py-3 bg-[#91C8E4] w-fit h-fit border-solid border-0 rounded-2xl p-3">
-                                    <p class="font-[courier] text-[#4682A9] text-sm text-left">Display text message from sender.</p>
-                                </div>
-                            </div>-->
                         </div>
                     </div>
 

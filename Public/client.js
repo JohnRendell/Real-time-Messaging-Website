@@ -400,24 +400,22 @@ socket.on('user-left', user=>{
     let activeParent = document.getElementById('active-parent');
 
     //for global chat
-    divLeft(user, 'globalMsg-holder');
-
-    //for private chat
-    divLeft(user, 'privateMsg-holder-' + user);
-   
+    divLeft(user, 'globalMsg-holder', 'divContainer');
+    removeDuplicate('globalMsg-holder', 'divContainer');
 
     //remove the container to the active list
     activeParent.removeChild(document.getElementById('private-msg-holder_' + user));
 })
 
 //user left div
-function divLeft(user, holder){
+function divLeft(user, holder, containerHolder){
     //parent div of the messages
     let parentDiv = document.getElementById(holder);
 
     //this is the container for the connected div
     let container = document.createElement('div');
     container.setAttribute('class', 'py-3 bg-[#F6F4EB] h-fit border-solid border-0 rounded-2xl mt-3');
+    container.setAttribute('id', containerHolder);
 
     //this is the notification for the user if it is connected
     let username_p = document.createElement('p');

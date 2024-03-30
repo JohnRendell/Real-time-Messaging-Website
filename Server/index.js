@@ -44,7 +44,6 @@ server.on('connect', socket=>{
         for(let [key, value] of clients){
             user = clients.get(key, value);
             server.emit('active-list', user);
-            //socket.join(user);
         }
     })
 
@@ -56,7 +55,6 @@ server.on('connect', socket=>{
 
     //if a user send a message via private message
     socket.on('private-message', (msg, sender, receiver)=>{
-        //socket.to(receiver).emit('private-message', msg, sender, receiver);
         socket.broadcast.emit('private-message', msg, sender, receiver);
     })
 
