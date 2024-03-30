@@ -1,0 +1,20 @@
+{
+  "name": "messaging-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./Src/input.css -o ./Public/style.css --watch",
+    "start": "nodemon Server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.0",
+    "socket.io": "^4.7.5"
+  }
+}
